@@ -1,4 +1,4 @@
-package com.chengchengkeji.microservicetest.microservicediscoveryeureka;
+package com.chengchengkeji.microservicetest;
 
 
 import org.springframework.boot.SpringApplication;

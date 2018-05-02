@@ -3,8 +3,6 @@ server:
 spring:
   application:
     name: microserivce-consumer-movie-ribbon
-user:
-  userServiceUrl: http://localhost:8000/
 
 eureka:
   client:

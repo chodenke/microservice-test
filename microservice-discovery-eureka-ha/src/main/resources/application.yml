@@ -32,5 +32,7 @@ eureka:
   instance:
     hostname: peer2
   client:
+    healthcheck:
+      enabled: true
     serviceUrl:
       defaultZone: http://admin:admin123@peer1:8761/eureka/

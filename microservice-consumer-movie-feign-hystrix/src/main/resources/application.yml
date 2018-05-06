@@ -2,7 +2,7 @@ server:
   port: 8010
 spring:
   application:
-    name: microserivce-consumer-movie-ribbon
+    name: microserivce-consumer-movie-feign-hystrix
 management:
   endpoints:
     web:

@@ -1,0 +1,15 @@
+server:
+  port: 8031
+spring:
+  application:
+    name: microserivce-hystrix-turbine
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin123@peer1:8761/eureka/,http://admin:admin123@peer2:8762/eureka/
+  instance:
+      prefer-ip-address: true
+turbine:
+  cluster-name-expression: "'default'"
+  app-config: microserivce-consumer-movie-feign-hystrix, microserivce-consumer-movie-feign-hystrix-fallback-factory

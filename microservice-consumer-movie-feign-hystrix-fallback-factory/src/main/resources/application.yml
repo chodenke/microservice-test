@@ -1,8 +1,8 @@
 server:
-  port: 8010
+  port: 8011
 spring:
   application:
-    name: microserivce-consumer-movie-ribbon
+    name: microserivce-consumer-movie-feign-hystrix-fallback-factory
 management:
   endpoints:
     web:

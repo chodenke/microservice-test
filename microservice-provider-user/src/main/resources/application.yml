@@ -33,6 +33,8 @@ logging:                                # 配置日志级别，让hibernate打�
     org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
 eureka:
   client:
+    healthcheck:
+      enabled: true
     serviceUrl:
       defaultZone: http://admin:admin123@peer1:8761/eureka/,http://admin:admin123@peer2:8762/eureka/
   instance:

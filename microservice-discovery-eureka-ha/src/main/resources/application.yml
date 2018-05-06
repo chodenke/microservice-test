@@ -17,7 +17,7 @@ eureka:
     hostname: peer1                               # 指定当profile=peer1时，主机名是peer1
   client:
     serviceUrl:
-      defaultZone: http://admin:admin123@peer2:8762/eureka/      # 将自己注册到peer2这个Eureka上面去
+      defaultZone: http://admin:admin123@peer2:8762/eureka/  # 将自己注册到peer2这个Eureka上面去
 
 ---
 spring:
@@ -32,7 +32,5 @@ eureka:
   instance:
     hostname: peer2
   client:
-    healthcheck:
-      enabled: true
     serviceUrl:
       defaultZone: http://admin:admin123@peer1:8761/eureka/

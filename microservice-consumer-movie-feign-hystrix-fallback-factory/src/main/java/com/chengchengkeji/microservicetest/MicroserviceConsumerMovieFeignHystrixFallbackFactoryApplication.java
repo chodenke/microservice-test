@@ -10,9 +10,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableDiscoveryClient
 @EnableFeignClients
 @EnableCircuitBreaker
-public class MicroserviceConsumerMovieFeignHystrixApplication {
+public class MicroserviceConsumerMovieFeignHystrixFallbackFactoryApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MicroserviceConsumerMovieFeignHystrixApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MicroserviceConsumerMovieFeignHystrixFallbackFactoryApplication.class, args);
+    }
 }

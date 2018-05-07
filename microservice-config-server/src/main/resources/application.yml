@@ -1,0 +1,12 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/helloCodeke/spring-cloud-config-repo.git
+          username: helloCodeke
+          password: cyx++13519637329

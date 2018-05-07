@@ -9,7 +9,7 @@ user:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://admin:admin123@10.0.0.100:8761/eureka/,http://admin:admin123@10.0.0.100:8762/eureka/
+      defaultZone: http://admin:admin123@peer1:8761/eureka/,http://admin:admin123@peer2:8762/eureka/
   instance:
     prefer-ip-address: true  # 表示将自己的ip注册到Eureka Server；不配或配置为false时，表示注册该微服务所在操作系统的hostname到Eureka Server
 
